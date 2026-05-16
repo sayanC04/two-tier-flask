@@ -23,9 +23,7 @@ services:
       - "3306:3306"
 
   flask:
-    build:
-      context: .
-    container_name: two-tier-backend
+    image: cultivator404/two-tier-flask:latest
     ports:
       - "5000:5000"
     environment:
